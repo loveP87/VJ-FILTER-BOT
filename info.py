@@ -125,9 +125,9 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 
 
 # Shortlink Info
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', TRUE)) # Set True Or False
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'https://api.gplinks.com/api?api=fb7a8005dead1ca46131a5a5a02a120ca4d8da6e&url=yourdestinationlink.com&alias=CustomAlias')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'fb7a8005dead1ca46131a5a5a02a120ca4d8da6e')
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False)) # Set True Or False
+SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
+SHORTLINK_API = environ.get('SHORTLINK_API', '')
 TUTORIAL = environ.get('TUTORIAL', '') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
 
 
