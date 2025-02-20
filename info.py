@@ -10,14 +10,14 @@ from Script import script
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'TechVJBot')
+SESSION = environ.get('SESSION', 'MovieVistaBot')
 API_ID = int(environ.get('API_ID', '26857121'))
 API_HASH = environ.get('API_HASH', 'abf295ca94041f9dfbf3d78c2a9f4a13')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split()
+PICS = (environ.get('PICS', '')).split()
 
 
 # Admins & Users
@@ -59,8 +59,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://lovedpatel888:lRse6rO9dBheFy3v@cluster0.qnbyz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://lovedpatel888:lRse6rO9dBheFy3v@cluster0.qnbyz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "techvjclonefilterbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 
@@ -91,8 +90,8 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 # Links
 GRP_LNK = environ.get('GRP_LNK', 't.me/afdawuyfuyduygauygw')
 CHNL_LNK = environ.get('CHNL_LNK', 't.me/uygfuwgfugugfg')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'vj_bot_disscussion') # Support Chat Link Without https:// or @
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/kingvj01')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '') # Support Chat Link Without https:// or @
+OWNER_LNK = environ.get('OWNER_LNK', '')
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
@@ -127,7 +126,7 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', TRUE)) # Set True Or False
-SHORTLINK_URL = environ.get('SHORTLINK_URL', ' https://api.gplinks.com/api?api=fb7a8005dead1ca46131a5a5a02a120ca4d8da6e&url=yourdestinationlink.com&alias=CustomAlias')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'https://api.gplinks.com/api?api=fb7a8005dead1ca46131a5a5a02a120ca4d8da6e&url=yourdestinationlink.com&alias=CustomAlias')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'fb7a8005dead1ca46131a5a5a02a120ca4d8da6e')
 TUTORIAL = environ.get('TUTORIAL', '') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
 
