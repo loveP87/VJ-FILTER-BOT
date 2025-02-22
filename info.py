@@ -17,7 +17,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
-PICS = (environ.get('PICS', 'https://files.catbox.moe/hh2kxw.jpg')).split()
+PICS = (environ.get('PICS', '')).split()
 
 
 # Admins & Users
@@ -126,8 +126,8 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True)) # Set True Or False
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'tnshort.net')
-SHORTLINK_API = environ.get('SHORTLINK_API', '624e8f13c6f1a0e4e5eff5756b904be8945903f7')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'gplinks.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'fb7a8005dead1ca46131a5a5a02a120ca4d8da6e')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+K90TwSvypmAyZGY1') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
 
 
