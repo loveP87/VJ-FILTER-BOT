@@ -10,7 +10,7 @@ from Script import script
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'MovieVistaBot')
+SESSION = environ.get('SESSION', 'igris')
 API_ID = int(environ.get('API_ID', '26857121'))
 API_HASH = environ.get('API_HASH', 'abf295ca94041f9dfbf3d78c2a9f4a13')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
