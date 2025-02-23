@@ -10,7 +10,7 @@ from Script import script
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', 'igris')
+SESSION = environ.get('SESSION', 'MovieVistaBot')
 API_ID = int(environ.get('API_ID', '26857121'))
 API_HASH = environ.get('API_HASH', 'abf295ca94041f9dfbf3d78c2a9f4a13')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
@@ -112,10 +112,10 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 
 # Token Verification Info :
-VERIFY = bool(environ.get('VERIFY', False))
-VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', '')
-VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '')
-VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', '')
+VERIFY = bool(environ.get('VERIFY', True))
+VERIFY_SHORTLINK_URL = environ.get('VERIFY_SHORTLINK_URL', 'runurl.in')
+VERIFY_SHORTLINK_API = environ.get('VERIFY_SHORTLINK_API', '92103f449c0e3a368ad606fb25441a4d3579ae56')
+VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/+K90TwSvypmAyZGY1')
 
 # If You Fill Second Shortner Then Bot Attach Both First And Second Shortner And Use It For Verify.
 VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', False))
@@ -126,8 +126,8 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
 
 # Shortlink Info
 SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True)) # Set True Or False
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'gplinks.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'fb7a8005dead1ca46131a5a5a02a120ca4d8da6e')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'runurl.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '92103f449c0e3a368ad606fb25441a4d3579ae56')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+K90TwSvypmAyZGY1') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
 
 
